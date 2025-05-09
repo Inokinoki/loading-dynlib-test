@@ -1,5 +1,6 @@
 #include <vector>
 #include <algorithm>
+#include <string>
 
 #define STATIC_LIB_DATA "static_lib_v1_data"
 

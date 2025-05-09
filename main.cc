@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Default open with RTLD_LOCAL
-    void *dynlib1_handler = dlopen("dyn_lib1.so", RTLD_CUSTOM_FLAGS);
+    void *dynlib1_handler = dlopen("./dyn_lib1.so", RTLD_CUSTOM_FLAGS);
     if (!dynlib1_handler) {
         // Handle error
         std::cerr << "Error opening library: " << dlerror() << std::endl;
@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Default open with RTLD_LOCAL
-    void *dynlib2_handler = dlopen("dyn_lib2.so", RTLD_CUSTOM_FLAGS);
+    void *dynlib2_handler = dlopen("./dyn_lib2.so", RTLD_CUSTOM_FLAGS);
     if (!dynlib2_handler) {
         // Handle error
         dlclose(dynlib1_handler);
