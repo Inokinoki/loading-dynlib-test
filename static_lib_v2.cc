@@ -24,7 +24,7 @@ struct ShutdownData
     std::string data = STATIC_LIB_DATA;
 };
 
-std::string fakeFunction()
+std::string __attribute__((visibility("default"))) fakeFunction()
 {
     // This function is just a placeholder to demonstrate the use of the static library.
     ShutdownData *data = ShutdownData::get();
