@@ -1,0 +1,6 @@
+LIBPROTO_1.0 {
+  global:
+    run_A;
+    _Z10DoShutdownv;
+  local: *;
+};
